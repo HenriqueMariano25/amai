@@ -7,7 +7,7 @@
     <div class="flex flex-col justify-center items-center">
       <div class="flex items-center">
         <img src="../assets/images/am_ai_text.png" alt="Logo" class="h-[45px] w-fit"/>
-        <img src="../assets/images/am_ai_icon.png" alt="Logo" class="h-[35px] w-fit"/>
+        <img src="../assets/images/am_ai_icon.png" alt="Icone" class="h-[35px] w-fit"/>
       </div>
 
 <!--      <span class="text-xs">Inteligência Aplicada na Gestão de Ativos</span>-->

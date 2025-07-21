@@ -6,7 +6,7 @@ import MenuTopo from "~/components/MenuTopo.vue";
 <template>
   <div>
     <MenuTopo/>
-    <NuxtPage/>
+    <slot/>
   </div>
 </template>
 
