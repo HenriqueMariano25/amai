@@ -13,7 +13,7 @@
 <!--      <span class="text-xs">Inteligência Aplicada na Gestão de Ativos</span>-->
     </div>
     <div class="flex gap-4 text-xl items-center">
-      <NuxtLink to="/public" class="opcao-menu">
+      <NuxtLink to="/" class="opcao-menu">
         <span>HOME</span>
       </NuxtLink>
       <NuxtLink to="/sobre_nos" class="opcao-menu">
