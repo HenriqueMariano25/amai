@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import MenuTopo from "~/components/MenuTopo.vue";
+import MenuTopo from "~/components/shared/MenuTopo.vue";
 </script>
 
 <template>

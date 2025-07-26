@@ -6,14 +6,14 @@
   <div class="bg-primary flex justify-between text-white px-2 py-1">
     <div class="flex flex-col justify-center items-center">
       <div class="flex items-center">
-        <img src="../assets/images/am_ai_text.png" alt="Logo" class="h-[45px] w-fit"/>
-        <img src="../assets/images/am_ai_icon.png" alt="Icone" class="h-[35px] w-fit"/>
+        <img src="../../assets/images/am_ai_text.png" alt="Logo" class="h-[45px] w-fit"/>
+        <img src="../../assets/images/am_ai_icon.png" alt="Icone" class="h-[35px] w-fit"/>
       </div>
 
 <!--      <span class="text-xs">Inteligência Aplicada na Gestão de Ativos</span>-->
     </div>
     <div class="flex gap-4 text-xl items-center">
-      <NuxtLink to="/" class="opcao-menu">
+      <NuxtLink to="/public" class="opcao-menu">
         <span>HOME</span>
       </NuxtLink>
       <NuxtLink to="/sobre_nos" class="opcao-menu">

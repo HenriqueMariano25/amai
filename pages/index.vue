@@ -1,8 +1,9 @@
 <script setup lang="ts">
+import Botao from "~/components/ui/Botao.vue";
 </script>
 
 <template>
-  <div class="flex flex-col gap-8">
+  <div class="flex flex-col">
     <div class="image-wrapper relative">
       <div class="bg-black/70 absolute w-full h-full fundo"/>
       <img src="@/assets/images/foto_fundo.jpeg" alt="Minha imagem"/>
@@ -11,7 +12,7 @@
         <span class="text-4xl font-normal">"Inteligência Aplicada na Gestão de Ativos."</span>
       </div>
     </div>
-    <div class="flex flex-col gap-4 px-24 text-center ">
+    <div class="flex flex-col gap-4 px-24 text-center mt-8 mb-8 ">
       <span class="text-3xl font-bold">Soluções aplicadas com inteligência </span>
       <div class="flex gap-4 ">
         <div class="text-start flex flex-col gap-4 w-fit justify-center">
@@ -23,13 +24,13 @@
         </div>
         <div class="flex gap-2 relative h-[420px] w-10/12 justify-center">
           <div class="border-[12px] border-white rounded-xl self-end">
-            <img src="@/assets/images/img01.jpeg" alt="img 01" class="w-[280px] h-[260px] rounded-xl ">
+            <img src="@/assets/images/img01.jpeg" alt="img 01" class="w-[280px] h-[260px] rounded-xl shadow">
           </div>
           <div class="border-[12px] border-white -ml-28 rounded-xl h-fit overflow-hidden bg-white">
-            <img src="@/assets/images/img02.jpeg" alt=" img 02" class="w-[280px] h-[260px] rounded-xl ">
+            <img src="@/assets/images/img02.jpeg" alt=" img 02" class="w-[280px] h-[260px] rounded-xl  shadow">
           </div>
           <div class="border-[12px] border-white -ml-24 rounded-xl self-end bg-white">
-            <img src="@/assets/images/foto_fundo.jpeg" alt="img 03 " class="w-[280px] h-[260px] rounded-xl ">
+            <img src="@/assets/images/foto_fundo.jpeg" alt="img 03 " class="w-[280px] h-[260px] rounded-xl shadow">
           </div>
         </div>
       </div>
@@ -74,6 +75,92 @@
         </div>
       </div>
     </div>
+    <div class="p-8 bg-gray-100 grid grid-cols-6">
+      <div class="col-span-4">
+        <img src="@/assets/images/foto_fundo.jpeg" alt="img 03 " class=" rounded">
+      </div>
+      <div class="text-2xl col-span-2 -ml-6 justify-center flex flex-col gap-8">
+        <div class="item-atividades text-primary">
+          <div class="hex-wrapper">
+            <div class="hex-inner"/>
+          </div>
+          <span>Engenharia do proprietário</span>
+        </div>
+        <div class="item-atividades text-primary">
+          <div class="hex-wrapper">
+            <div class="hex-inner"/>
+          </div>
+          <span>Testes de Aceitação em Fábrica - TAF</span>
+        </div>
+        <div class="item-atividades text-primary">
+          <div class="hex-wrapper">
+            <div class="hex-inner"/>
+          </div>
+          <span>Testes de Aceitação em Campo - TAC</span>
+        </div>
+        <div class="item-atividades text-primary">
+          <div class="hex-wrapper">
+            <div class="hex-inner"/>
+          </div>
+          <span>Gestão de Ativos</span>
+        </div>
+        <div class="item-atividades text-primary">
+          <div class="hex-wrapper">
+            <div class="hex-inner"/>
+          </div>
+          <span>O&M</span>
+        </div>
+        <div class="item-atividades text-primary">
+          <div class="hex-wrapper">
+            <div class="hex-inner"/>
+          </div>
+          <span>Consultoria/Auditoria Técnica</span>
+        </div>
+        <div class="item-atividades text-primary">
+          <div class="hex-wrapper">
+            <div class="hex-inner"/>
+          </div>
+          <span>Treinamentos</span>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col items-center w-full mt-4 mb-4 gap-4">
+      <div>
+        <span class="text-4xl font-bold text-gray-600">ALGUNS DOS NOSSOS</span>
+        <span class="text-4xl font-bold text-primary"> CLIENTES</span>
+      </div>
+      <div class="grid grid-cols-9 gap-6">
+        <img src="../assets/images/cliente.png" height="78" width="121"/>
+        <img src="../assets/images/cliente.png" height="78" width="121"/>
+        <img src="../assets/images/cliente.png" height="78" width="121"/>
+        <img src="../assets/images/cliente.png" height="78" width="121"/>
+        <img src="../assets/images/cliente.png" height="78" width="121"/>
+        <img src="../assets/images/cliente.png" height="78" width="121"/>
+        <img src="../assets/images/cliente.png" height="78" width="121"/>
+        <img src="../assets/images/cliente.png" height="78" width="121"/>
+        <img src="../assets/images/cliente.png" height="78" width="121"/>
+        <img src="../assets/images/cliente.png" height="78" width="121"/>
+        <img src="../assets/images/cliente.png" height="78" width="121"/>
+        <img src="../assets/images/cliente.png" height="78" width="121"/>
+        <img src="../assets/images/cliente.png" height="78" width="121"/>
+        <img src="../assets/images/cliente.png" height="78" width="121"/>
+        <img src="../assets/images/cliente.png" height="78" width="121"/>
+        <img src="../assets/images/cliente.png" height="78" width="121"/>
+        <img src="../assets/images/cliente.png" height="78" width="121"/>
+        <img src="../assets/images/cliente.png" height="78" width="121"/>
+      </div>
+    </div>
+    <div class="relative w-full flex flex-col items-end text-end  fale-conosco ">
+      <div class="h-full w-full absolute bg-gray-200/50 z-0"/>
+      <div class="flex flex-col z-10 p-10 gap-4 items-end">
+        <span class="text-2xl font-bold">Tem alguma dúvida ou gostaria de conversar mais<br/> sobre as nossas áreas de atuação ?</span>
+        <div class="w-fit">
+          <Botao texto="FALE CONOSCO"/>
+        </div>
+
+      </div>
+
+    </div>
   </div>
 </template>
 
@@ -117,7 +204,7 @@
   background-image: url("@/assets/images/segunda-foto-home.jpg");
 }
 
-.item-solucao-ativo{
+.item-solucao-ativo {
   background-color: rgba(255, 255, 255, 0.75);
   display: flex;
   width: 20%;
@@ -127,6 +214,44 @@
   justify-content: center;
   text-align: center;
   gap: 8px;
+}
+
+.hex-wrapper {
+  width: 50px;
+  height: 50px;
+  background: rgb(243, 244, 246); /* Borda */
+  clip-path: polygon(
+      50% 0%,
+      93% 25%,
+      93% 75%,
+      50% 100%,
+      7% 75%,
+      7% 25%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hex-inner {
+  width: 30px;
+  height: 30px;
+  background: #0e2841;
+  clip-path: inherit;
+}
+
+.item-atividades {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.fale-conosco {
+  background-image: url("@/assets/images/segunda-foto-home.jpg");
+  background-size: 100%;
+  background-repeat:  no-repeat;
+  background-position: center;
 }
 
 </style>
