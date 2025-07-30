@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="flex flex-col gap-4 p-8">
+  <div class="flex flex-col gap-8 py-8 px-72">
     <span class="text-primary font-medium text-4xl">Quem somos ?</span>
     <div class="flex w-full gap-4">
       <div class="!w-[65vw] text-xl">
