@@ -4,7 +4,7 @@ import { Icon } from '@iconify/vue';
 </script>
 
 <template>
-  <div class="flex gap-8 bg-zinc-900 text-white py-10 px-8 text-lg justify-center">
+  <div class="flex gap-8 bg-primary text-white py-10 px-8 text-lg justify-center">
     <div class="flex items-center">
 
       <img src="../../assets/images/am_ai_text.png" alt="Logo" class="h-[80px] w-fit"/>
@@ -80,7 +80,7 @@ import { Icon } from '@iconify/vue';
 
 <style scoped>
 .titulo {
-  color: #56697A;
+  color: #fff;
   font-weight: 500;
   font-size: 1.5em;
 

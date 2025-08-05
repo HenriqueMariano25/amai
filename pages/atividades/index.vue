@@ -11,7 +11,7 @@
       </div>
       <div class="flex flex-col gap-2 text-xl cada-atividade">
         <span class="titulo text-zinc-900">Testes de Aceitação em Fábrica - TAF</span>
-        <ul class="list-disc px-5 w-full text-xl">
+        <ul class="list-none px-5 w-full text-xl">
           <li>Análise de estudos elétricos;</li>
           <li>Consultoria de sistemas de controle e proteção;</li>
           <li>Consolidação de projetos básicos;</li>
