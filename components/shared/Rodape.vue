@@ -14,7 +14,7 @@ import { Icon } from '@iconify/vue';
       <span class="titulo">Links</span>
       <ul class="lista-opcoes">
         <li>
-          <NuxtLink to="/home">Home</NuxtLink>
+          <NuxtLink to="/">Home</NuxtLink>
         </li>
         <li>
           <NuxtLink to="/sobre_nos">Sobre nós</NuxtLink>
