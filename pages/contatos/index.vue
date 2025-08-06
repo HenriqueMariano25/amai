@@ -2,6 +2,7 @@
 import {Icon} from "@iconify/vue";
 import Botao from "~/components/ui/Botao.vue";
 import {ref} from "vue";
+import DialogPoliticaPrivacidade from "~/pages/contatos/components/DialogPoliticaPrivacidade.vue";
 
 const assuntos = ref([
   {assunto: 'Solicitação de proposta'},
@@ -9,12 +10,15 @@ const assuntos = ref([
   {assunto: 'Trabalhe conosco - envie seu currículo'},
 ])
 
+const mostrarDialogPoliticaPrivacidade = ref(false);
+
+
 </script>
 
 <template>
-  <div class="flex flex-col gap-4 py-8 px-72">
+  <div class="flex flex-col gap-8 py-8 px-8 xl:px-32 2xl:px-52">
     <span class="text-primary font-medium text-4xl">Contatos</span>
-    <div class="grid grid-cols-7">
+    <div class="grid grid-cols-1 md:grid-cols-7">
       <div class="flex flex-col gap-8 col-span-3">
         <div class="flex flex-col ">
           <span class="font-bold text-2xl text-zinc-800">Fale conosco</span>
@@ -25,31 +29,34 @@ const assuntos = ref([
             </li>
             <li class="flex gap-1 ">
               <Icon icon="material-symbols:mail-rounded" width="24" height="24" style="color: #000"/>
-              <span>amai@atendimento.com.br</span>
+              <a href="mailto:webmaster@example.com">contato@amaienergia.com.br</a>
             </li>
             <li class="flex gap-1 ">
               <Icon icon="mingcute:whatsapp-fill" width="24" height="24" style="color: #000"/>
-              <span>+55 (22) 99237-6913</span>
-            </li>
-            <li class="flex gap-1 ">
-              <Icon icon="mingcute:whatsapp-fill" width="24" height="24" style="color: #000"/>
-              <span>+55 (22) 99237-6913</span>
+              <a target="_blank"
+                 href="https://wa.me/5511954758300?text=Olá!%20Visitei%20seu%20site%20e%20gostaria%20de%20mais%20informações.">+55
+                (11) 95475-8300</a>
             </li>
             <li class="mt-1">
-              <div class="w-6/12">
-                <Botao icone="mingcute:whatsapp-fill" cor-icone="#000" texto="Mande uma mensagem"
-                       class="!text-base font-normal !p-1"/>
+              <div class="w-full lg:w-6/12">
+                <a target="_blank"
+                   href="https://wa.me/5511954758300?text=Olá!%20Visitei%20seu%20site%20e%20gostaria%20de%20mais%20informações.">
+                  <Botao icone="mingcute:whatsapp-fill" cor-icone="#000" texto="Mande uma mensagem"
+                         class="!text-base font-normal !p-1"/>
+                </a>
               </div>
             </li>
           </ul>
         </div>
         <div class="flex flex-col">
-          <span class="font-bold text-2xl text-zinc-800">Localização</span>
-          <span class=" text-zinc-800">Rua Giovanni Carnovali, N° 92</span>
-          <span class=" text-zinc-800">Vila Caraguata</span>
+          <span class="font-bold text-2xl text-zinc-800">Escritório</span>
+          <span class=" text-zinc-800">EZ Towers Torre B</span>
+          <span class=" text-zinc-800">R. Arquiteto Olavo Redig de Campos, N° 105 – 24⁰ Andar</span>
+          <span class=" text-zinc-800">Chácara Santo Antônio</span>
           <span class=" text-zinc-800">São Paulo, SP</span>
+          <span class=" text-zinc-800">CEP 04711-905</span>
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col mb-8 lg:mb-0">
           <span class="font-bold text-2xl text-zinc-800">Atendimento</span>
           <span class=" text-zinc-800">Segunda a Sexta - 08:00 a 18:00</span>
         </div>
@@ -85,15 +92,24 @@ const assuntos = ref([
           <FileUpload mode="basic" name="demo[]" url="/api/upload" accept="image/*" :maxFileSize="1000000"
                       @upload="onUpload" :auto="true" chooseLabel="Selecione o arquivo"/>
         </div>
+        <div class="flex gap-2 items-center">
+          <Checkbox inputId="ingredient2" name="pizza" value="Mushroom"/>
+          <label for="ingredient2">Li e concordo com os termos da
+            <span class="font-bold cursor-pointer text-primary-light" @click="mostrarDialogPoliticaPrivacidade = !mostrarDialogPoliticaPrivacidade">
+              política de privacidade.
+            </span>
+          </label>
+        </div>
         <Botao cor-icone="#000" texto="Enviar" class=" font-normal !p-2"/>
       </div>
     </div>
-    <div class=" w-full h-1 flex h-[450px] justify-center items-center">
+    <div class=" w-full flex h-[450px] justify-center items-center">
       <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1827.4512554814185!2d-46.605112974748636!3d-23.643662120485985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b4f953c46bf%3A0x7a81cb86aac2025c!2sRua%20Giovanni%20Carnovali%2C%2092%20-%20Vila%20Caraguata%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004191-000!5e0!3m2!1spt-BR!2sbr!4v1754068346446!5m2!1spt-BR!2sbr"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2167.995801943011!2d-46.7027433!3d-23.6269373!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce51cb431d0533%3A0xe9bf1885cc18baf1!2sEdif%C3%ADcio%20EZ%20Towers%20-%20Bloco%20B!5e1!3m2!1spt-BR!2sbr!4v1754449765081!5m2!1spt-BR!2sbr"
           width="100%" height="450" style="border:0;" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+    <DialogPoliticaPrivacidade v-model:visible="mostrarDialogPoliticaPrivacidade"/>
   </div>
 </template>
 

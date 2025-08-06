@@ -52,11 +52,18 @@ const mostrarOpcoesMenu = ref<boolean>(false);
   background-color: rgb(41 96 144);
   opacity: 0;
   height: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  display: none;
+
   transition-duration:  0.1s;
 }
 
 .mostrar {
+  max-height: 100%;
   opacity: 1 !important;
   height: 100% !important;
+  display: block
 }
 </style>
