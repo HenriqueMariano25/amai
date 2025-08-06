@@ -43,6 +43,7 @@ export default defineNuxtConfig({
             firebaseAppId: process.env.FIREBASE_APP_ID
         }
     },
+    css: ['~/assets/css/main.css'],
     devtools: {enabled: true},
     modules: [
       '@nuxt/eslint',

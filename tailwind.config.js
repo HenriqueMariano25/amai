@@ -10,7 +10,7 @@ export default {
                 secondary: {
                     DEFAULT: '#296090'
                 },
-            }
+            },
         }
     }
 }

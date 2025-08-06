@@ -6,8 +6,6 @@ import MenuTopoMobile from "~/components/shared/MenuTopoMobile.vue";
 
 const {ehMobile} = useEhMobile()
 
-const mostrarPanelMenuLateralMobile = ref<boolean>(false)
-
 </script>
 
 <template>
