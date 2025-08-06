@@ -4,9 +4,8 @@ import { Icon } from '@iconify/vue';
 </script>
 
 <template>
-  <div class="flex gap-8 bg-primary text-white py-10 px-8 text-lg justify-center">
-    <div class="flex items-center">
-
+  <div class="flex flex-col lg:flex-row gap-8 bg-primary text-white py-10 px-8 text-lg justify-center">
+    <div class="flex items-center justify-center">
       <img src="../../assets/images/am_ai_text.png" alt="Logo" class="h-[80px] w-fit"/>
       <img src="../../assets/images/am_ai_icon.png" alt="Icone" class="h-[60px] w-fit"/>
     </div>
@@ -35,13 +34,16 @@ import { Icon } from '@iconify/vue';
       </ul>
     </div>
     <div>
-      <span class="titulo">Localização</span>
+      <span class="titulo ">Localização</span>
       <ul class="">
         <li>
-          Rua Giovanni Carnovali, N° 92
+          EZ Towers Torre B
         </li>
-        <li>Vila Caraguata</li>
+        <li>R. Arquiteto Olavo Redig de Campos</li>
+        <li> N° 105 – 24⁰ Andar</li>
+        <li>Chácara Santo Antônio</li>
         <li> São Paulo, SP</li>
+        <li> CEP 04711-905</li>
       </ul>
     </div>
     <div>
@@ -63,15 +65,13 @@ import { Icon } from '@iconify/vue';
         </li>
         <li class="flex gap-1 ">
           <Icon icon="material-symbols:mail-rounded" width="24" height="24" style="color: #fff"/>
-          <span>amai@atendimento.com.br</span>
+          <a href="mailto:webmaster@example.com">contato@amaienergia.com.br</a>
         </li>
         <li class="flex gap-1 ">
           <Icon icon="mingcute:whatsapp-fill" width="24" height="24" style="color: #fff"/>
-          <span>+55 (22) 99237-6913</span>
-        </li>
-        <li class="flex gap-1 ">
-          <Icon icon="mingcute:whatsapp-fill" width="24" height="24" style="color: #fff"/>
-          <span>+55 (22) 99237-6913</span>
+          <a target="_blank"
+             href="https://wa.me/5511954758300?text=Olá!%20Visitei%20seu%20site%20e%20gostaria%20de%20mais%20informações.">+55
+            (11) 95475-8300</a>
         </li>
       </ul>
     </div>
