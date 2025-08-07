@@ -6,7 +6,7 @@
   <div class="flex flex-col gap-8 py-8 px-8 xl:px-32 2xl:px-52">
     <span class="text-primary font-medium text-4xl">Quem somos ?</span>
     <div class="flex flex-col lg:flex-row w-full gap-4">
-      <div class="lg:w-[50vw] xl:!w-[65vw] text-xl">
+      <div class="lg:w-[50vw] xl:!w-[65vw] text-xl indent-6">
         <p>
           A AM.AI Energia é empresa especializada em serviços de engenharia do proprietário, testes de aceitação em
           fábrica, comissionamento, treinamentos e consultoria de gestão de ativos para subestações de transmissão de
