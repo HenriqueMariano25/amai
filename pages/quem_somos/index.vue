@@ -8,21 +8,12 @@
     <div class="flex flex-col lg:flex-row w-full gap-4">
       <div class="lg:w-[50vw] xl:!w-[65vw] text-xl indent-6">
         <p>
-          A AM.AI Energia é empresa especializada em serviços de engenharia do proprietário, testes de aceitação em
-          fábrica, comissionamento, treinamentos e consultoria de gestão de ativos para subestações de transmissão de
-          energia elétrica. Estamos entusiasmados em ter a oportunidade de compartilhar nosso conhecimento e experiência
-          com você. </p>
+          A AM.AI Energia tem atuação com foco em eficiência, confiabilidade e personalização, apoiando nossos clientes
+          na operação estratégica e econômica de seus ativos ao longo de toda a vida útil. </p>
         <p class="mt-2">
-          Somos uma equipe de profissionais altamente capacitados e experientes em negócios, projetos, gestão de ativos
-          e comissionamento de subestações, com ampla experiência no setor de energia elétrica. Oferecemos serviços de
-          consultoria, Engenharia do proprietário e desenvolvimento de projetos personalizados para ajudar nossos
-          clientes a gerenciar seus ativos de forma eficiente e econômica ao longo de sua vida útil, garantindo a
-          continuidade da operação de suas subestações. </p>
-        <p class="mt-2">
-          Entendemos que cada cliente tem necessidades e desafios únicos, por isso adaptamos nossos serviços para
-          atender às necessidades específicas de cada projeto. Nosso objetivo é fornecer soluções personalizadas que
-          ajudem nossos clientes a maximizar a eficiência e reduzir custos. Estamos comprometidos em fornecer serviços
-          de alta qualidade, com total transparência e comunicação clara ao longo de todo o projeto.</p>
+          Contamos com uma equipe experiente e altamente qualificada, capaz de adaptar soluções às necessidades
+          específicas de cada projeto. Nosso compromisso é entregar serviços com excelência técnica, transparência e
+          comunicação clara, garantindo resultados sólidos e sustentáveis no setor elétrico. </p>
       </div>
       <div class="w-full lg:max-w-[35vw] order-first lg:order-last">
         <img src="@/assets/images/foto_fundo.jpeg" alt="primeira imagem" class="w-full h-full rounded-xl shadow-lg">
@@ -33,7 +24,7 @@
         <img src="@/assets/images/img02.jpeg" alt="Segunda imagem"
              class="w-full rounded-xl max-h-[450px] shadow-lg object-cover">
       </div>
-      <div class="flex flex-col  w-full px-8">
+      <div class="flex flex-col  w-full px-4">
         <span class="titulo font-bold">Missão</span>
         <span class="mb-4">Oferecer soluções inteligentes e personalizadas aplicadas em gestão de ativos de energia, com foco em eficiência, confiabilidade e redução de custos.</span>
         <span class="titulo font-bold">Visão</span>

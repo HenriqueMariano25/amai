@@ -128,42 +128,46 @@ const clientes = ref(['@/assets/images/cliente.png', '../assets/images/cliente.p
         </div>
       </div>
     </div>
-    <div class="flex flex-col items-center w-full mt-4 mb-4 gap-4">
-      <div class="text-2xl lg:text-4xl">
-        <span class="font-bold text-gray-600">ALGUNS DOS NOSSOS</span>
-        <span class="font-bold text-primary"> CLIENTES</span>
-      </div>
-      <Carousel class="flex md:hidden " :value="clientes" :numVisible="1" :numScroll="1" autoplay-interval="">
-        <template #item="slotProps">
-          <div class="border border-surface-200 dark:border-surface-700 rounded m-2 ">
-            <div class="">
-              <div class="relative mx-auto">
-                <img src="../assets/images/foto_fundo.jpeg" :alt="slotProps.data" class="w-full rounded"/>
+    <div class="grid grid-cols-2 items-center w-full mt-4 mb-4 gap-8 px-8">
+      <div>
+        <div class="text-2xl lg:text-4xl text-center">
+          <span class="font-bold text-gray-600">NOSSOS</span>
+          <span class="font-bold text-primary"> CLIENTES</span>
+        </div>
+        <Carousel class="flex md:hidden " :value="clientes" :numVisible="1" :numScroll="1" autoplay-interval="">
+          <template #item="slotProps">
+            <div class="border border-surface-200 dark:border-surface-700 rounded m-2 ">
+              <div class="">
+                <div class="relative mx-auto">
+                  <img src="../assets/images/foto_fundo.jpeg" :alt="slotProps.data" class="w-full rounded"/>
+                </div>
               </div>
             </div>
-          </div>
-        </template>
-      </Carousel>
-      <div class="md:grid grid-cols-9 gap-6 hidden">
-        <img src="../assets/images/cliente.png" height="78" width="121"/>
-        <img src="../assets/images/cliente.png" height="78" width="121"/>
-        <img src="../assets/images/cliente.png" height="78" width="121"/>
-        <img src="../assets/images/cliente.png" height="78" width="121"/>
-        <img src="../assets/images/cliente.png" height="78" width="121"/>
-        <img src="../assets/images/cliente.png" height="78" width="121"/>
-        <img src="../assets/images/cliente.png" height="78" width="121"/>
-        <img src="../assets/images/cliente.png" height="78" width="121"/>
-        <img src="../assets/images/cliente.png" height="78" width="121"/>
-        <img src="../assets/images/cliente.png" height="78" width="121"/>
-        <img src="../assets/images/cliente.png" height="78" width="121"/>
-        <img src="../assets/images/cliente.png" height="78" width="121"/>
-        <img src="../assets/images/cliente.png" height="78" width="121"/>
-        <img src="../assets/images/cliente.png" height="78" width="121"/>
-        <img src="../assets/images/cliente.png" height="78" width="121"/>
-        <img src="../assets/images/cliente.png" height="78" width="121"/>
-        <img src="../assets/images/cliente.png" height="78" width="121"/>
-        <img src="../assets/images/cliente.png" height="78" width="121"/>
+          </template>
+        </Carousel>
+        <div class="md:grid grid-cols-9 gap-6 hidden">
+          <img src="../assets/images/cliente.png" height="78" width="121"/>
+          <img src="../assets/images/cliente.png" height="78" width="121"/>
+          <img src="../assets/images/cliente.png" height="78" width="121"/>
+          <img src="../assets/images/cliente.png" height="78" width="121"/>
+          <img src="../assets/images/cliente.png" height="78" width="121"/>
+          <img src="../assets/images/cliente.png" height="78" width="121"/>
+          <img src="../assets/images/cliente.png" height="78" width="121"/>
+          <img src="../assets/images/cliente.png" height="78" width="121"/>
+          <img src="../assets/images/cliente.png" height="78" width="121"/>
+          <img src="../assets/images/cliente.png" height="78" width="121"/>
+          <img src="../assets/images/cliente.png" height="78" width="121"/>
+          <img src="../assets/images/cliente.png" height="78" width="121"/>
+          <img src="../assets/images/cliente.png" height="78" width="121"/>
+          <img src="../assets/images/cliente.png" height="78" width="121"/>
+          <img src="../assets/images/cliente.png" height="78" width="121"/>
+          <img src="../assets/images/cliente.png" height="78" width="121"/>
+          <img src="../assets/images/cliente.png" height="78" width="121"/>
+          <img src="../assets/images/cliente.png" height="78" width="121"/>
+        </div>
       </div>
+
+
     </div>
     <div class="relative w-full flex flex-col items-end text-end  fale-conosco ">
       <div class="h-full w-full absolute bg-gray-200/50 z-0"/>

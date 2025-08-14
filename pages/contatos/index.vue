@@ -38,13 +38,13 @@ const mostrarDialogPoliticaPrivacidade = ref(false);
             <li class="flex gap-1 ">
               <Icon icon="mingcute:whatsapp-fill" width="24" height="24" style="color: #000"/>
               <a target="_blank"
-                 href="https://wa.me/5511954758300?text=Olá!%20Visitei%20seu%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20a%20AM.IA%20Energia.">+55
+                 href="https://wa.me/5511954758300?text=Olá!%20Visitei%20seu%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20a%20AM.AI%20Energia.">+55
                 (11) 95475-8300</a>
             </li>
             <li class="mt-1">
               <div class="w-full lg:w-6/12">
                 <a target="_blank"
-                   href="https://wa.me/5511954758300?text=Olá!%20Visitei%20seu%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20a%20AM.IA%20Energia.">
+                   href="https://wa.me/5511954758300?text=Olá!%20Visitei%20seu%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20a%20AM.AI%20Energia.">
                   <Botao icone="mingcute:whatsapp-fill" cor-icone="#000" texto="Mande uma mensagem"
                          class="!text-base font-normal !p-1"/>
                 </a>
