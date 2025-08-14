@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Icon } from '@iconify/vue';
+import {Icon} from '@iconify/vue';
 
 </script>
 
@@ -16,13 +16,13 @@ import { Icon } from '@iconify/vue';
           <NuxtLink to="/">Home</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/sobre_nos">Sobre nós</NuxtLink>
+          <NuxtLink to="/quem_somos">Quem somos</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/atividades">Atividades</NuxtLink>
+          <NuxtLink to="/nossos_servicos">Nossos serviços</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/obras">Obras</NuxtLink>
+          <NuxtLink to="/portfolio">Portfólio</NuxtLink>
         </li>
         <li>
           <NuxtLink to="/contatos">Contatos</NuxtLink>
@@ -60,8 +60,12 @@ import { Icon } from '@iconify/vue';
       <span class="titulo">Fale conosco</span>
       <ul class="lista-opcoes">
         <li class="flex gap-1 ">
-            <Icon icon="mdi:linkedin" width="24" height="24" style="color: #fff"/>
-            <span>linkedin.com/company/amaienergia/</span>
+          <Icon icon="mdi:linkedin" width="24" height="24" style="color: #fff"/>
+          <a target="_blank" href="https://www.linkedin.com/company/amaienergia/">linkedin.com/amaienergia/</a>
+        </li>
+        <li class="flex gap-1 ">
+          <Icon icon="ri:instagram-fill" width="24" height="24" style="color: #fff"/>
+          <a target="_blank" href="https://www.instagram.com/amaienergia">@amaienergia</a>
         </li>
         <li class="flex gap-1 ">
           <Icon icon="material-symbols:mail-rounded" width="24" height="24" style="color: #fff"/>
@@ -70,9 +74,10 @@ import { Icon } from '@iconify/vue';
         <li class="flex gap-1 ">
           <Icon icon="mingcute:whatsapp-fill" width="24" height="24" style="color: #fff"/>
           <a target="_blank"
-             href="https://wa.me/5511954758300?text=Olá!%20Visitei%20seu%20site%20e%20gostaria%20de%20mais%20informações.">+55
+             href="https://wa.me/5511954758300?text=Olá!%20Visitei%20seu%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20a%20AM.IA%20Energia.">+55
             (11) 95475-8300</a>
         </li>
+
       </ul>
     </div>
   </div>
@@ -86,8 +91,8 @@ import { Icon } from '@iconify/vue';
 
 }
 
-.lista-opcoes li:hover{
-  color: rgb(180,180,180);
+.lista-opcoes li:hover {
+  color: rgb(180, 180, 180);
   cursor: pointer;
 }
 </style>

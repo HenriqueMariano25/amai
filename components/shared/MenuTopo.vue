@@ -16,14 +16,14 @@
       <NuxtLink to="/" class="opcao-menu">
         <span>HOME</span>
       </NuxtLink>
-      <NuxtLink to="/sobre_nos" class="opcao-menu">
+      <NuxtLink to="/quem_somos" class="opcao-menu">
         <span>QUEM SOMOS</span>
       </NuxtLink>
-      <NuxtLink to="/atividades" class="opcao-menu">
-        <span>ATIVIDADES</span>
+      <NuxtLink to="/nossos_servicos" class="opcao-menu">
+        <span>NOSSOS SERVIÇOS</span>
       </NuxtLink>
-      <NuxtLink to="/obras" class="opcao-menu">
-        <span>OBRAS</span>
+      <NuxtLink to="/portfolio" class="opcao-menu">
+        <span>PORTFÓLIO</span>
       </NuxtLink>
       <NuxtLink to="/contatos" class="opcao-menu">
         <span>CONTATOS</span>

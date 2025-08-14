@@ -6,14 +6,14 @@ const opcoesMenu = ref([{
   nome: 'Home',
   rota: '/'
 }, {
-  nome: 'Sobre nós',
-  rota: '/sobre_nos'
+  nome: 'Quem somos',
+  rota: '/quem_somos'
 }, {
-  nome: 'Atividades',
-  rota: '/atividades'
+  nome: 'Nossos serviços',
+  rota: '/nossos_servicos'
 }, {
-  nome: 'Obras',
-  rota: '/obras'
+  nome: 'Portfólio',
+  rota: '/portfolio'
 }, {
   nome: 'Contatos',
   rota: '/contatos'

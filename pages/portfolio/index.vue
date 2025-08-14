@@ -2,7 +2,7 @@
 import {ref} from 'vue';
 import {collection, getDocs, getDoc, onSnapshot} from 'firebase/firestore';
 import {query} from "@firebase/database";
-import DialogDetalheObra from "~/pages/obras/components/DialogDetalheObra.vue";
+import DialogDetalheObra from "~/pages/portfolio/components/DialogDetalheObra.vue";
 import type {IObra} from "~/interfaces/obra.interface";
 
 
@@ -49,7 +49,7 @@ onMounted(() => {
 
 <template>
   <div class="flex flex-col gap-8 py-8 px-8 xl:px-32 2xl:px-52">
-    <span class="text-primary font-medium text-4xl mb-4">Obras</span>
+    <span class="text-primary font-medium text-4xl mb-4">Portfólio</span>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-between items-center">
       <div v-for="obra in obras" class="flex flex-col gap-2" :key="obra.id">
         <Card style="width: 100%; overflow: hidden " @click="obraSelecionada = obra; mostrarDialogDetalheObra = true"

@@ -4,7 +4,7 @@
 
 <template>
   <div class="flex flex-col gap-8 py-8 px-8 xl:px-32 2xl:px-52">
-    <span class="text-primary font-medium text-4xl mb-4">Atividades</span>
+    <span class="text-primary font-medium text-4xl mb-4">Nossos serviços</span>
     <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
       <div class="w-full md:w-[60%] flex">
         <img src="@/assets/images/foto_fundo.jpeg" alt="primeira imagem" class=" h-full rounded-xl shadow-lg w-full">
