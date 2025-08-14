@@ -17,7 +17,7 @@
         <span>HOME</span>
       </NuxtLink>
       <NuxtLink to="/sobre_nos" class="opcao-menu">
-        <span>SOBRE NÓS</span>
+        <span>QUEM SOMOS</span>
       </NuxtLink>
       <NuxtLink to="/atividades" class="opcao-menu">
         <span>ATIVIDADES</span>

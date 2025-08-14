@@ -25,11 +25,16 @@ const mostrarDialogPoliticaPrivacidade = ref(false);
           <ul class="lista-opcoes">
             <li class="flex gap-1 ">
               <Icon icon="mdi:linkedin" width="24" height="24" style="color: #000"/>
-              <span>linkedin.com/company/amaienergia/</span>
+              <a target="_blank" href="https://www.linkedin.com/company/amaienergia/">linkedin.com/amaienergia/</a>
+<!--              <span>linkedin.com/company/amaienergia/</span>-->
+            </li>
+            <li class="flex gap-1 ">
+              <Icon icon="ri:instagram-fill" width="24" height="24" style="color: #000"/>
+              <a target="_blank" href="https://www.instagram.com/amaienergia">@amaienergia</a>
             </li>
             <li class="flex gap-1 ">
               <Icon icon="material-symbols:mail-rounded" width="24" height="24" style="color: #000"/>
-              <a href="mailto:webmaster@example.com">contato@amaienergia.com.br</a>
+              <a target="_blank" href="mailto:webmaster@example.com">contato@amaienergia.com.br</a>
             </li>
             <li class="flex gap-1 ">
               <Icon icon="mingcute:whatsapp-fill" width="24" height="24" style="color: #000"/>

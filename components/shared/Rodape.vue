@@ -4,7 +4,7 @@ import { Icon } from '@iconify/vue';
 </script>
 
 <template>
-  <div class="flex flex-col lg:flex-row gap-8 bg-primary text-white py-10 px-8 text-lg justify-center">
+  <div class="flex flex-col lg:flex-row gap-32 bg-primary text-white py-10 px-8 text-lg justify-center">
     <div class="flex items-center justify-center">
       <img src="../../assets/images/am_ai_text.png" alt="Logo" class="h-[80px] w-fit"/>
       <img src="../../assets/images/am_ai_icon.png" alt="Icone" class="h-[60px] w-fit"/>
@@ -35,7 +35,7 @@ import { Icon } from '@iconify/vue';
     </div>
     <div>
       <span class="titulo ">Localização</span>
-      <ul class="">
+      <ul class="text-sm">
         <li>
           EZ Towers Torre B
         </li>

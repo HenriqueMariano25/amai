@@ -90,17 +90,13 @@
 <style scoped>
 .titulo {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 32px;
   text-decoration: red;
-}
-
-.cada-atividade ul li {
-  text-indent: 1.5rem
 }
 
 .texto-atividade{
   list-style: none;
-  font-size: 1.25rem /* 20px */;
+  font-size: 24px /* 20px */;
   line-height: 1.75rem /* 28px */;
   max-width: 100vw;
   white-space: break-spaces;
