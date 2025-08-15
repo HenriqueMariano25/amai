@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import {Icon} from '@iconify/vue';
+import {servicos} from "~/utils/constants/nossoServicos";
 
 </script>
 
@@ -47,13 +48,14 @@ import {Icon} from '@iconify/vue';
       </ul>
     </div>
     <div>
-      <span class="titulo">Áreas de atuação</span>
+      <span class="titulo">Nossos serviços</span>
       <ul class="">
-        <li>Subestação</li>
-        <li>Renováveis</li>
-        <li>Comissionamento</li>
-        <li>Gestão de ativos</li>
-        <li>Treinamentos</li>
+        <NuxtLink :to="{ path: '/nossos_servicos', query: { destaque: servico.nome } }" v-for="servico in servicos"
+                  :key="servico.nome" class=" text-white hover:text-gray-300 cursor-pointer">
+          <li>
+            <span>{{ servico.titulo }}</span>
+          </li>
+        </NuxtLink>
       </ul>
     </div>
     <div>

@@ -1,14 +1,52 @@
 <script setup lang="ts">
 
+const route = useRoute();
+const itemDestacado = ref(null)
+
+const fotos = ref([])
+const buscarFotos = async () => {
+  try {
+    const imagens = import.meta.glob('~/assets/images/nossos_servicos/*.{png,jpg,jpeg}', {eager: true});
+
+    fotos.value = Object.values(imagens).map(imagem => imagem.default);
+
+  } catch (erro) {
+    console.error(erro)
+  }
+}
+
+onMounted(() => {
+  buscarFotos()
+
+  const destaque = route.query.destaque
+
+  if(destaque){
+    setTimeout(()=>{
+      const elemento = document.getElementById(`item-${destaque}`)
+
+      if(elemento){
+        elemento.scrollIntoView({behavior: 'smooth', block: 'center'});
+        itemDestacado.value = destaque
+      }
+
+      setTimeout(() => {
+        itemDestacado.value = null;
+      }, 2000);
+    },100)
+  }
+})
 
 </script>
 
 <template>
-  <div class="flex flex-col gap-8 py-8 px-8 xl:px-32 2xl:px-52">
+  <div class="flex flex-col gap-8 py-8 px-8 xl:px-32 2xl:px-52" id="item-engenhariaDoProprietario">
     <span class="text-primary font-medium text-4xl mb-4">Nossos serviços</span>
     <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
-      <div class="w-full md:w-[60%] flex">
-        <img src="@/assets/images/foto_fundo.jpeg" alt="primeira imagem" class=" h-full rounded-xl shadow-lg w-full">
+      <div class="w-full md:w-[60%] flex h-[450px]">
+        <img
+            :src="fotos.find(img => img.includes('engenhariaDoProprietario'))"
+            alt="primeira imagem"
+            class=" h-full rounded-xl shadow-lg w-full object-cover">
       </div>
       <div class="flex flex-col gap-2 text-xl cada-atividade">
         <span class="titulo text-zinc-900">Engenharia do proprietário</span>
@@ -26,7 +64,7 @@
       </div>
     </div>
     <divider/>
-    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
+    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center" id="item-taf">
       <div class="flex flex-col gap-2 text-xl cada-atividade">
         <span class="titulo text-zinc-900">Testes de Aceitação em Fábrica (TAF)</span>
         <span class="sub-titulo">Atuação e Fiscalização</span>
@@ -45,14 +83,16 @@
           </li>
         </ul>
       </div>
-      <div class="w-full md:w-[60%] flex max-lg:order-first">
-        <img src="@/assets/images/foto_fundo.jpeg" alt="primeira imagem" class=" h-full rounded-xl shadow-lg w-full">
+      <div class="w-full md:w-[60%] flex h-[450px] max-lg:order-first">
+        <img :src="fotos.find(img => img.includes('taf'))" alt="primeira imagem"
+             class=" h-full rounded-xl shadow-lg w-full object-cover">
       </div>
     </div>
     <divider/>
-    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
-      <div class="w-full md:w-[60%] flex">
-        <img src="@/assets/images/foto_fundo.jpeg" alt="primeira imagem" class=" h-full rounded-xl shadow-lg w-full">
+    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center" id="item-tac">
+      <div class="w-full md:w-[60%] flex h-[450px]">
+        <img :src="fotos.find(img => img.includes('tac'))" alt="primeira imagem"
+             class=" h-full rounded-xl shadow-lg w-full object-cover">
       </div>
       <div class="flex flex-col gap-2 text-xl cada-atividade">
         <span class="titulo text-zinc-900">Teste de Aceitação em Campo (TAC)</span>
@@ -73,7 +113,7 @@
       </div>
     </div>
     <divider/>
-    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
+    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center" id="item-gestaoDeAtivos">
       <div class="flex flex-col gap-2 text-xl cada-atividade">
         <span class="titulo text-zinc-900">Gestão de ativos</span>
         <ul class="texto-atividade space-y-1">
@@ -84,14 +124,16 @@
           <li>Desenvolvimento de ai ao auxilio de tomada de decisão;</li>
         </ul>
       </div>
-      <div class="w-full md:w-[60%] flex max-lg:order-first">
-        <img src="@/assets/images/foto_fundo.jpeg" alt="primeira imagem" class=" h-full rounded-xl shadow-lg w-full">
+      <div class="w-full md:w-[60%] flex h-[450px] max-lg:order-first">
+        <img :src="fotos.find(img => img.includes('gestaoDeAtivos'))" alt="primeira imagem"
+             class=" h-full rounded-xl shadow-lg w-full object-cover">
       </div>
     </div>
     <divider/>
-    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
-      <div class="w-full md:w-[60%] flex">
-        <img src="@/assets/images/foto_fundo.jpeg" alt="primeira imagem" class=" h-full rounded-xl shadow-lg w-full">
+    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center" id="item-OM">
+      <div class="w-full md:w-[60%] flex h-[450px]">
+        <img :src="fotos.find(img => img.includes('OM'))" alt="primeira imagem"
+             class=" h-full rounded-xl shadow-lg w-full object-cover">
       </div>
       <div class="flex flex-col gap-2 text-xl cada-atividade">
         <span class="titulo text-zinc-900">O&M</span>
@@ -109,7 +151,7 @@
       </div>
     </div>
     <divider/>
-    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
+    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center" id="item-consultoriaAuditoriaTecnica">
       <div class="flex flex-col gap-2 text-xl cada-atividade">
         <span class="titulo text-zinc-900">Consultoria/Auditoria Técnica </span>
         <ul class="texto-atividade space-y-1">
@@ -128,14 +170,16 @@
           </li>
         </ul>
       </div>
-      <div class="w-full md:w-[60%] flex max-lg:order-first">
-        <img src="@/assets/images/foto_fundo.jpeg" alt="primeira imagem" class=" h-full rounded-xl shadow-lg w-full">
+      <div class="w-full md:w-[60%] flex h-[450px] max-lg:order-first">
+        <img :src="fotos.find(img => img.includes('consultoriaAuditoriaTecnica'))" alt="primeira imagem"
+             class=" h-full rounded-xl shadow-lg w-full object-cover">
       </div>
     </div>
     <divider/>
-    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
-      <div class="w-full md:w-[60%] flex">
-        <img src="@/assets/images/foto_fundo.jpeg" alt="primeira imagem" class=" h-full rounded-xl shadow-lg w-full">
+    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center" id="item-treinamentos">
+      <div class="w-full md:w-[60%] flex h-[450px]">
+        <img :src="fotos.find(img => img.includes('treinamentos'))" alt="primeira imagem"
+             class=" h-full rounded-xl shadow-lg w-full object-cover">
       </div>
       <div class="flex flex-col gap-2 text-xl cada-atividade">
         <span class="titulo text-zinc-900">Treinamentos</span>
@@ -144,7 +188,7 @@
           <li>Serviços auxiliares CA/CC;</li>
           <li>Sensores e monitores dos Ativos;</li>
           <li>SPCS (solução aplicada);</li>
-          <li>Ensaios elétricos;</li>z
+          <li>Ensaios elétricos;</li>
           <li>Malas de testes para equipamentos;</li>
           <li>Operação e manutenção;</li>
           <li>Solução customizada para o cliente na forma virtual e presencial;</li>
