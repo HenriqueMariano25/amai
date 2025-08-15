@@ -1,5 +1,6 @@
 <script setup lang="ts">
 
+
 </script>
 
 <template>
@@ -10,26 +11,38 @@
         <img src="@/assets/images/foto_fundo.jpeg" alt="primeira imagem" class=" h-full rounded-xl shadow-lg w-full">
       </div>
       <div class="flex flex-col gap-2 text-xl cada-atividade">
-        <span class="titulo text-zinc-900">Testes de Aceitação em Fábrica - TAF</span>
+        <span class="titulo text-zinc-900">Engenharia do proprietário</span>
         <ul class="texto-atividade space-y-1">
+          <li>Análise de projeto executivo elétrico, SPCS e arquiteturas;</li>
           <li>Análise de estudos elétricos;</li>
+          <li>Análise à compra de equipamentos;</li>
+          <li>Análise aos Testes de Aceitação em Fábrica (TAF);</li>
           <li>Consultoria de sistemas de controle e proteção;</li>
           <li>Consolidação de projetos básicos;</li>
+          <li>Coordenação de Testes de Campo (TAC);</li>
           <li>Elaboração de especificações técnicas;</li>
-          <li>Análise de projeto executivo elétrico, SPCS e arquiterturas;</li>
+          <li>Supervisão de montagem;</li>
         </ul>
       </div>
     </div>
     <divider/>
     <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
       <div class="flex flex-col gap-2 text-xl cada-atividade">
-        <span class="titulo text-zinc-900">Engenharia do proprietário</span>
+        <span class="titulo text-zinc-900">Testes de Aceitação em Fábrica (TAF)</span>
+        <span class="sub-titulo">Atuação e Fiscalização</span>
         <ul class="texto-atividade space-y-1">
-          <li>Análise de estudos elétricos;</li>
-          <li>Consultoria de sistemas de controle e proteção;</li>
-          <li>Consolidação de projetos básicos;</li>
-          <li>Elaboração de especificações técnicas;</li>
-          <li>Análise de projeto executivo elétrico, SPCS e arquiterturas;</li>
+          <li>Fiação interna e construtiva dos painéis;</li>
+          <li>Parametrização das proteções;</li>
+          <li>Integração do sistema digital, incluindo:
+          </li>
+          <li>
+            <ul class="space-y-1">
+              <li class="ml-5">Protocolos de comunicação;</li>
+              <li class="ml-5">Lógicas e intertravamentos das unidades de controle;</li>
+              <li class="ml-5">Testes de desempenho do sistema completo;</li>
+              <li class="ml-5">Testes de equipamentos de AT e MT;</li>
+            </ul>
+          </li>
         </ul>
       </div>
       <div class="w-full md:w-[60%] flex max-lg:order-first">
@@ -42,26 +55,33 @@
         <img src="@/assets/images/foto_fundo.jpeg" alt="primeira imagem" class=" h-full rounded-xl shadow-lg w-full">
       </div>
       <div class="flex flex-col gap-2 text-xl cada-atividade">
-        <span class="titulo text-zinc-900">Testes de Aceitação em Fábrica - TAF</span>
-        <ul class="texto-atividade text-xl">
-          <li>Análise de estudos elétricos;</li>
-          <li>Consultoria de sistemas de controle e proteção;</li>
-          <li>Consolidação de projetos básicos;</li>
-          <li>Elaboração de especificações técnicas;</li>
-          <li>Análise de projeto executivo elétrico, SPCS e arquiterturas;</li>
+        <span class="titulo text-zinc-900">Teste de Aceitação em Campo (TAC)</span>
+        <span class="sub-titulo">Atuação e Fiscalização em SPCS e Equipamentos Primários</span>
+        <ul class="texto-atividade space-y-1">
+          <li>Verificação da cablagem e testes ponto a ponto;</li>
+          <li>Verificação das curvas e ajuste das proteções;</li>
+          <li>Lógicas e intertravamentos das unidades de controle;</li>
+          <li>Integração do sistema digital com os equipamentos da planta;</li>
+          <li>Validação de arquiteturas de proteção e comunicação;</li>
+          <li>Testes de proteção, controle e teleproteção;</li>
+          <li>Testes em equipamentos de alta tensão (seccionador, disjuntor, TC, TP, transformador...);</li>
+          <li>Testes em equipamentos de média tensão (cubículos e skids) de UFVs;</li>
+          <li>Testes em cabos isolados e malha de aterramento;</li>
+          <li>Energização da planta;</li>
+          <li>Operação assistida;</li>
         </ul>
       </div>
     </div>
     <divider/>
     <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
       <div class="flex flex-col gap-2 text-xl cada-atividade">
-        <span class="titulo text-zinc-900">Engenharia do proprietário</span>
-        <ul class="texto-atividade text-xl">
-          <li>Análise de estudos elétricos;</li>
-          <li>Consultoria de sistemas de controle e proteção;</li>
-          <li>Consolidação de projetos básicos;</li>
-          <li>Elaboração de especificações técnicas;</li>
-          <li>Análise de projeto executivo elétrico, SPCS e arquiterturas;</li>
+        <span class="titulo text-zinc-900">Gestão de ativos</span>
+        <ul class="texto-atividade space-y-1">
+          <li>Apoio em discussões técnicas;</li>
+          <li>Visitas técnicas;</li>
+          <li>Análises técnicas e relatórios técnicos;</li>
+          <li>Apoio ao desenvolvimento de códigos e kpis para atendimento de tomada de decisões aos ativos;</li>
+          <li>Desenvolvimento de ai ao auxilio de tomada de decisão;</li>
         </ul>
       </div>
       <div class="w-full md:w-[60%] flex max-lg:order-first">
@@ -74,13 +94,60 @@
         <img src="@/assets/images/foto_fundo.jpeg" alt="primeira imagem" class=" h-full rounded-xl shadow-lg w-full">
       </div>
       <div class="flex flex-col gap-2 text-xl cada-atividade">
-        <span class="titulo text-zinc-900">Testes de Aceitação em Fábrica - TAF</span>
-        <ul class="texto-atividade text-xl">
-          <li>Análise de estudos elétricos;</li>
-          <li>Consultoria de sistemas de controle e proteção;</li>
-          <li>Consolidação de projetos básicos;</li>
+        <span class="titulo text-zinc-900">O&M</span>
+        <ul class="texto-atividade space-y-1">
+          <li>Manutenções preventivas;</li>
+          <li>Emissão de relatórios técnicos;</li>
+          <li>Elaboração de manuais e plano de manutenção;</li>
+          <li>Guias de manutenção e ensaios;</li>
+          <li>Apoio com ferramentas ons (sam, sintegre...);</li>
+          <li>Consultoria nas especificações técnicas;</li>
+          <li>Apoio em análise de segurança - APR;</li>
+          <li>Consultoria nas emissões de ordens (manobras e intervenções);</li>
+          <li>Consultoria na elaboração de OPEX;</li>
+        </ul>
+      </div>
+    </div>
+    <divider/>
+    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
+      <div class="flex flex-col gap-2 text-xl cada-atividade">
+        <span class="titulo text-zinc-900">Consultoria/Auditoria Técnica </span>
+        <ul class="texto-atividade space-y-1">
+          <li>Preparatório as auditorias regulatórias órgãos como aneel, arsesp;</li>
+          <li>Levantamento técnico em subestações;</li>
+          <li>Aplicações de subestações digitais e retrofits;</li>
+          <li>Apoio em elaboração de propostas técnicas;</li>
           <li>Elaboração de especificações técnicas;</li>
-          <li>Análise de projeto executivo elétrico, SPCS e arquiterturas;</li>
+          <li>Assessoria técnica:</li>
+          <li>
+            <ul class="space-y-1">
+              <li class="ml-5">Levantamento do estado de instalações elétricas das subestações e instalações
+                industriais;</li>
+              <li class="ml-5">Análise técnica de equipamentos e sistemas;</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="w-full md:w-[60%] flex max-lg:order-first">
+        <img src="@/assets/images/foto_fundo.jpeg" alt="primeira imagem" class=" h-full rounded-xl shadow-lg w-full">
+      </div>
+    </div>
+    <divider/>
+    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
+      <div class="w-full md:w-[60%] flex">
+        <img src="@/assets/images/foto_fundo.jpeg" alt="primeira imagem" class=" h-full rounded-xl shadow-lg w-full">
+      </div>
+      <div class="flex flex-col gap-2 text-xl cada-atividade">
+        <span class="titulo text-zinc-900">Treinamentos</span>
+        <ul class="texto-atividade space-y-1">
+          <li>Equipamentos de Alta e Média Tensão;</li>
+          <li>Serviços auxiliares CA/CC;</li>
+          <li>Sensores e monitores dos Ativos;</li>
+          <li>SPCS (solução aplicada);</li>
+          <li>Ensaios elétricos;</li>z
+          <li>Malas de testes para equipamentos;</li>
+          <li>Operação e manutenção;</li>
+          <li>Solução customizada para o cliente na forma virtual e presencial;</li>
         </ul>
       </div>
     </div>
@@ -91,7 +158,11 @@
 .titulo {
   font-weight: 500;
   font-size: 32px;
-  text-decoration: red;
+}
+
+.sub-titulo{
+  font-weight: 500;
+  font-size: 26px; /* Tailwind's gray-600 */
 }
 
 .texto-atividade{
